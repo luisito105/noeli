@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        hi{ color: rebeccapurple}
+        .bienvenido{
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px rebeccapurple;
+            padding: 5px;
+            background: plum;
+            color: black;
+        }
+        .ventana{
+            width: 30%;
+            border-radius: 10px;
+            background:  palevioletred;
+            color: black;
+            border-radius: 0px 10px 0px 10px;
+            /* box-shadow:x y desenfoque extesion colo*/
+            box-shadow: 0px 0px 20px 15px purple;
+        }
+    </style>
+</head>
+<center>
+<body>
+  <div class="container">
+        <h2>Seleccione el Mes de Pago</h2>
+        
+   Mes de  pago:<input type="text" list="meses" size="10" name="mes">
+   <datalist id="meses">
+    <option value="Enero"></option>
+    <option value="Febrero"></option>
+    <option value="Marzo"></option>
+    <option value="Abril"></option>
+    <option value="Febrero"></option>
+    <option value="Mayo"></option>
+    <option value="Junio"></option>
+    <option value="Julio"></option>
+    <option value="Agosto"></option>
+    <option value="Septiembre"></option>
+    <option value="Octubre"></option>
+    <option value="Noviembre"></option>
+    <option value="Diciembre"></option>
+  </datalist>
+  <p> Ejemplo de Acordeón en HTML</p>
+  <details class="bienvenido">
+      <h1>Bienvenidos</h1><br>
+      <p> Hola Bienvenidos a todos</p>
+  </details><br>
+     <button popovertarget="ventana">Mensaje</button>
+        <div class="ventana" popover id="ventana"><center><h1>P O P O V E R</h1><br>
+        Tengan todos ustedes muy buenas tardes</center></div>
+        <br>
+        
+</body>
+</center>
+</html>
